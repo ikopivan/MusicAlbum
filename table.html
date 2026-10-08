@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Список музыкальных альбомов</title>
+    </head>
+    <body>
+        <h1 align="center">Музыкальные альбомы</h1>
+        <h2>Меню</h2>
+        <ul>
+            <li><a href="page.html">Главная страница</a></li>
+            <li><a href="album.html">twenty one pilots - Trench</a></li>
+            <li><a href="table.html">Список музыкальных альбомов</a></li>
+        </ul>
+        <hr>
+        <h2>Список музыкальных альбомов</h2>
+        <details>
+            <summary>График</summary>
+            <form>
+                <p><b>Значение по оси OX</b></p>
+                <p><label><input type="radio" name="axis-x" id="axisX" value="artist"> Исполнитель</label></p>
+                <p><label><input type="radio" name="axis-x" id="axisX" value="genre"> Жанр</label></p>
+                <p><label><input type="radio" name="axis-x" id="axisX" value="year"> Год</label></p>
+                <p><b>Значение по оси OY</b></p>
+                <p><label><input type="checkbox" name="axis-y" id="axisY" value="max-tracks"> Максимальное количество композиций</label></p>
+                <p><label><input type="checkbox" name="axis-y" id="axisY" value="min-tracks"> Минимальное количество композиций</label></p>
+                <p><label><input type="checkbox" name="axis-y" id="axisY" value="count"> Среднее количество композиций</label></p>
+                <p><input type="button" value="Построить"></p>
+            </form>
+        </details>
+        <details>
+            <summary>Фильтр</summary>
+            <form>
+                <p><label>Название альбома: <input type="text" name="album" id="album" size="30"></label></p>
+                <p><label>Исполнитель: <input type="text" name="artist" id="artist" size="30"></label></p>
+                <p><label>Жанр: <input type="text" name="genre" id="genre" size="30"></label></p>
+                <p><label>Год: от <input type="text" name="year-from" id="yearFrom" size="10"></label> <label>до <input type="text" name="year-to" size="10"></label></p>
+                <p><label>Количество композиций: от <input type="text" name="tracks-from" id="tracksFrom" size="10"></label> <label>до <input type="text" name="tracks-to" size="10"></label></p>
+                <p><input type="button" value="Найти"> </p>
+            </form>
+        </details>
+        <details>
+            <summary>Сортировка</summary>
+            <form>
+                <p><label>Первый уровень: <select name="sort-1">
+                            <option value="none">Нет</option>
+                            <option value="albumName">Название альбома</option>
+                            <option value="artist">Исполнитель</option>
+                            <option value="genre">Жанр</option>
+                            <option value="year">Год</option>
+                            <option value="quantityTracks">Количество композиций</option>
+                    </select></label> <label>по убыванию? <input type="checkbox" name="descending-1" id="descending-1"></label></p>
+                <p><label>Второй уровень: <select name="sort-2">
+                            <option value="none">Нет</option>
+                            <option value="albumName">Название альбома</option>
+                            <option value="artist">Исполнитель</option>
+                            <option value="genre">Жанр</option>
+                            <option value="year">Год</option>
+                            <option value="quantityTracks">Количество композиций</option>
+                    </select></label> <label>по убыванию? <input type="checkbox" name="descending-2" id="descending-2"></label></p>
+                <p><label>Третий уровень: <select name="sort-3">
+                            <option value="none">Нет</option>
+                            <option value="albumName">Название альбома</option>
+                            <option value="artist">Исполнитель</option>
+                            <option value="genre">Жанр</option>
+                            <option value="year">Год</option>
+                            <option value="quantityTracks">Количество композиций</option>
+                    </select></label> <label>по убыванию? <input type="checkbox" name="descending-3" id="descending-3"></label></p>
+                <p><input type="button" value="Сортировать"> </p>
+            </form>
+        </details>
+        <hr>
+        <p>В каталоге 60 альбомов. Количество композиций относится к указанному цифровому изданию и не включает видеоклипы. Жанры приведены по каталогу Apple Music.</p>
+        <h3>Альбомы любимых исполнителей и похожих артистов</h3>
+        <table border="1" cellpadding="3" cellspacing="0" width="100%">
+            <tr>
+                <th>№</th>
+                <th>Название альбома</th>
+                <th>Исполнитель</th>
+                <th>Жанр</th>
+                <th>Год</th>
+                <th>Количество композиций</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Vessel</td>
+                <td>twenty one pilots</td>
+                <td>Альтернативная музыка</td>
+                <td>2013</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Blurryface</td>
+                <td>twenty one pilots</td>
+                <td>Альтернативная музыка</td>
+                <td>2015</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="album.html">Trench</a></td>
+                <td>twenty one pilots</td>
+                <td>Альтернативная музыка</td>
+                <td>2018</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Scaled And Icy</td>
+                <td>twenty one pilots</td>
+                <td>Альтернативная музыка</td>
+                <td>2021</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Clancy</td>
+                <td>twenty one pilots</td>
+                <td>Альтернативная музыка</td>
+                <td>2024</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Breach</td>
+                <td>twenty one pilots</td>
+                <td>Альтернативная музыка</td>
+                <td>2025</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Therapy Session</td>
+                <td>NF</td>
+                <td>Хип-хоп</td>
+                <td>2016</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Perception</td>
+                <td>NF</td>
+                <td>Хип-хоп</td>
+                <td>2017</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>The Search</td>
+                <td>NF</td>
+                <td>Хип-хоп</td>
+                <td>2019</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>HOPE</td>
+                <td>NF</td>
+                <td>Хип-хоп</td>
+                <td>2023</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>The Human Condition</td>
+                <td>Jon Bellion</td>
+                <td>Поп</td>
+                <td>2016</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Glory Sound Prep</td>
+                <td>Jon Bellion</td>
+                <td>Поп</td>
+                <td>2018</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>good kid, m.A.A.d city</td>
+                <td>Kendrick Lamar</td>
+                <td>Хип-хоп</td>
+                <td>2012</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>To Pimp a Butterfly</td>
+                <td>Kendrick Lamar</td>
+                <td>Хип-хоп</td>
+                <td>2015</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>DAMN.</td>
+                <td>Kendrick Lamar</td>
+                <td>Хип-хоп</td>
+                <td>2017</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>GNX</td>
+                <td>Kendrick Lamar</td>
+                <td>Хип-хоп</td>
+                <td>2024</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Эльфийская рукопись (с бонусным треком)</td>
+                <td>Эпидемия</td>
+                <td>Метал</td>
+                <td>2004</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Сокровище Энии</td>
+                <td>Эпидемия</td>
+                <td>Рок</td>
+                <td>2014</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?</td>
+                <td>Billie Eilish</td>
+                <td>Альтернативная музыка</td>
+                <td>2019</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Happier Than Ever</td>
+                <td>Billie Eilish</td>
+                <td>Альтернативная музыка</td>
+                <td>2021</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>HIT ME HARD AND SOFT</td>
+                <td>Billie Eilish</td>
+                <td>Альтернативная музыка</td>
+                <td>2024</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Low Roar</td>
+                <td>Low Roar</td>
+                <td>Альтернативная музыка</td>
+                <td>2011</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>0</td>
+                <td>Low Roar</td>
+                <td>Альтернативная музыка</td>
+                <td>2014</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Once in a Long, Long While...</td>
+                <td>Low Roar</td>
+                <td>Альтернативная музыка</td>
+                <td>2017</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>NOT ALL HEROES WEAR CAPES (Deluxe)</td>
+                <td>Metro Boomin</td>
+                <td>Хип-хоп</td>
+                <td>2018</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>HEROES &amp; VILLAINS</td>
+                <td>Metro Boomin</td>
+                <td>Хип-хоп</td>
+                <td>2022</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>The Divine Feminine</td>
+                <td>Mac Miller</td>
+                <td>Hip-Hop</td>
+                <td>2016</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Swimming</td>
+                <td>Mac Miller</td>
+                <td>Хип-хоп</td>
+                <td>2018</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Circles</td>
+                <td>Mac Miller</td>
+                <td>Хип-хоп</td>
+                <td>2020</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Starboy</td>
+                <td>The Weeknd</td>
+                <td>R&amp;B / соул</td>
+                <td>2016</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>After Hours</td>
+                <td>The Weeknd</td>
+                <td>R&amp;B / соул</td>
+                <td>2020</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Dawn FM</td>
+                <td>The Weeknd</td>
+                <td>R&amp;B / соул</td>
+                <td>2022</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Parachutes</td>
+                <td>Coldplay</td>
+                <td>Альтернативная музыка</td>
+                <td>2000</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>A Rush of Blood to the Head</td>
+                <td>Coldplay</td>
+                <td>Альтернативная музыка</td>
+                <td>2002</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>Viva La Vida or Death and All His Friends</td>
+                <td>Coldplay</td>
+                <td>Альтернативная музыка</td>
+                <td>2008</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>36</td>
+                <td>InnerSpeaker</td>
+                <td>Tame Impala</td>
+                <td>Альтернативная музыка</td>
+                <td>2010</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>37</td>
+                <td>Lonerism (с бонусным треком)</td>
+                <td>Tame Impala</td>
+                <td>Рок</td>
+                <td>2012</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>38</td>
+                <td>Currents</td>
+                <td>Tame Impala</td>
+                <td>Альтернативная музыка</td>
+                <td>2015</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>39</td>
+                <td>Rebel</td>
+                <td>EsDeeKid</td>
+                <td>Rap</td>
+                <td>2025</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>40</td>
+                <td>Twenty Twenty</td>
+                <td>Djo</td>
+                <td>Альтернативная музыка</td>
+                <td>2019</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>DECIDE</td>
+                <td>Djo</td>
+                <td>Альтернативная музыка</td>
+                <td>2022</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>42</td>
+                <td>The Crux</td>
+                <td>Djo</td>
+                <td>Альтернативная музыка</td>
+                <td>2025</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>43</td>
+                <td>FOREVER PHASE</td>
+                <td>Paul Meany</td>
+                <td>Альтернативная музыка</td>
+                <td>2025</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>44</td>
+                <td>LONG.LIVE.A$AP</td>
+                <td>A$AP Rocky</td>
+                <td>Хип-хоп</td>
+                <td>2013</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>AT.LONG.LAST.A$AP</td>
+                <td>A$AP Rocky</td>
+                <td>Хип-хоп</td>
+                <td>2015</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>46</td>
+                <td>TESTING</td>
+                <td>A$AP Rocky</td>
+                <td>Хип-хоп</td>
+                <td>2018</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>47</td>
+                <td>I Love You.</td>
+                <td>The Neighbourhood</td>
+                <td>Альтернативная музыка</td>
+                <td>2013</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>48</td>
+                <td>Wiped Out!</td>
+                <td>The Neighbourhood</td>
+                <td>Альтернативная музыка</td>
+                <td>2015</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>49</td>
+                <td>CAN&#x27;T RUSH GREATNESS</td>
+                <td>Central Cee</td>
+                <td>Хип-хоп</td>
+                <td>2025</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>50</td>
+                <td>The Beautiful Letdown (Deluxe Version)</td>
+                <td>Switchfoot</td>
+                <td>Поп</td>
+                <td>2003</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>51</td>
+                <td>Nothing Is Sound (с бонусным треком)</td>
+                <td>Switchfoot</td>
+                <td>Поп</td>
+                <td>2005</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>52</td>
+                <td>Atlas: Year One</td>
+                <td>Sleeping At Last</td>
+                <td>Альтернативная музыка</td>
+                <td>2014</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>53</td>
+                <td>Atlas: II</td>
+                <td>Sleeping At Last</td>
+                <td>Авторская песня</td>
+                <td>2019</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>54</td>
+                <td>Odd Soul</td>
+                <td>MUTEMATH</td>
+                <td>Альтернативная музыка</td>
+                <td>2011</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>55</td>
+                <td>Nectar</td>
+                <td>Joji</td>
+                <td>Альтернативная музыка</td>
+                <td>2020</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>56</td>
+                <td>Optimist</td>
+                <td>FINNEAS</td>
+                <td>Альтернативная музыка</td>
+                <td>2021</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>57</td>
+                <td>Man On the Moon: The End of Day</td>
+                <td>Kid Cudi</td>
+                <td>Хип-хоп</td>
+                <td>2009</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>58</td>
+                <td>The Golden Age</td>
+                <td>Woodkid</td>
+                <td>Альтернативная музыка</td>
+                <td>2013</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>59</td>
+                <td>All My Demons Greeting Me as a Friend</td>
+                <td>AURORA</td>
+                <td>Инди-рок</td>
+                <td>2016</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>60</td>
+                <td>Nightfall in Middle Earth (Remastered 2007)</td>
+                <td>Blind Guardian</td>
+                <td>Метал</td>
+                <td>1998</td>
+                <td>23</td>
+            </tr>
+        </table>
+        <p>Для Trench доступна подробная страница этого сайта.</p>
+        <p><a href="page.html">Вернуться на главную</a></p>
+        <hr>
+        <p>Выполнил: Иван Копылов. Группа: Б9124-09.03.04.</p>
+    </body>
+</html>
